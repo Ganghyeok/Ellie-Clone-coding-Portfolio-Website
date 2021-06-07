@@ -7,7 +7,7 @@
     <title>Ganghyeok's Portfolio</title>
     <meta name="description" content="Portfolio for world-renowned Software Engineer Ganghyeok">
     <meta name="author" content="Ganghyeok">
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon.png">
     <script src="https://kit.fontawesome.com/361588b7c6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
     <!-- Home -->
     <section id="home">
       <img 
-        src="imgs/profile.png" 
+        src="imgs/profile/profile.png" 
         alt="Ganghyeok's profile photo" 
         class="home_avatar"
       />
@@ -79,12 +79,12 @@
       </div>
       <div class="about__schools">
         <div class="school">
-          <img src="imgs/pungduck.jpg" alt="pungduck" class="school__logo">
+          <img src="imgs/schools/pungduck.png" alt="pungduck" class="school__logo">
           <p class="school__name">Pungduck High School</p>
           <p class="school_period">'11 ~ '14</p>
         </div>
         <div class="school">
-          <img src="imgs/seoultech_logo.png" alt="seoultech" class="school__logo">
+          <img src="imgs/schools/seoultech_logo.png" alt="seoultech" class="school__logo">
           <p class="school__name">Seoul National University of Science and Technology</p>
           <p class="school_period">'14 ~ '20</p>
         </div>
@@ -180,7 +180,83 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work"></section>
+    <section id="work">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn">
+          All<span class="category__count">8</span>
+        </button>
+        <button class="category__btn">
+          Front-end<span class="category__count">3</span>
+        </button>
+        <button class="category__btn">
+          Back-end<span class="category__count">2</span>
+        </button>
+        <button class="category__btn">
+          Mobile<span class="category__count">2</span>
+        </button>
+      </div>
+
+      <div class="work__projects">
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj1.jpg" alt="PCB">
+          <div class="project__description">
+            <h3>PCB design</h3>
+            <span>PCB design using Kicad</span>
+          </div>
+        </a>
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj2.jpg" alt="RasberryPi">
+          <div class="project__description">
+            <h3>RasberryPi design</h3>
+            <span>RasberryPi design using Kicad</span>
+          </div>
+        </a>
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj3.jpg" alt="BGA IC design">
+          <div class="project__description">
+            <h3>BGA IC design</h3>
+            <span>BGA IC design using Orcad/Allegro</span>
+          </div>
+        </a>
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj4.jpg" alt="Main board design">
+          <div class="project__description">
+            <h3>Main board design</h3>
+            <span>Main board design using Kicad</span>
+          </div>
+        </a>
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj5.jpg" alt="RasberryPi programming">
+          <div class="project__description">
+            <h3>RasberryPi programming</h3>
+            <span>RasberryPi programming using Ubuntu</span>
+          </div>
+        </a>
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj6.jpg" alt="Atmel MCU programming">
+          <div class="project__description">
+            <h3>Atmel MCU programming</h3>
+            <span>Atmel MCU programming using AVR Studio</span>
+          </div>
+        </a>
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj7.jpg" alt="Breadboard circuit design">
+          <div class="project__description">
+            <h3>Breadboard circuit design</h3>
+            <span>Breadboard circuit design using Breadboard</span>
+          </div>
+        </a>
+        <a href="#" class="projects" target="_blank">
+          <img class="project__img" src="imgs/projects/prj8.jpg" alt="STM8 programming">
+          <div class="project__description">
+            <h3>STM8 programming</h3>
+            <span>STM8 programming using STM32CubeIDE</span>
+          </div>
+        </a>
+      </div>
+    </section>
     <!-- Testimonials -->
     <section id="testimonials"></section>
     <!-- Contact -->
