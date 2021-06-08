@@ -125,6 +125,20 @@ p {
   background-color: pink;
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
+.navbar__toggle-btn > i {
+  font-size: var(--font-medium);
+  color: var(--color-light-white);
+}
+
 /* Home */
 #home {
   background: url("imgs/background/home-background.png") center/cover no-repeat;
@@ -188,7 +202,7 @@ p {
   color: var(--color-blue);
   border: 1px solid var(--color-blue);
   border-radius: 50%;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .major__icon > i {
@@ -469,4 +483,39 @@ p {
 .contact__links > a > i:hover {
   transform: scale(1.1);
   color: var(--color-dark-grey);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 40px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
