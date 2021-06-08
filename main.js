@@ -33,6 +33,29 @@ homeContactBtn.addEventListener('click', () => {
   scrollIntoViews('#contact');
 });
 
+// Make home slowly fade to transparent as the window scrolls down
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+var scrollValueY = 0;
+var homeOpacity = 0;
+
+
+document.addEventListener('scroll', () => {
+  scrollValueY = window.scrollY;
+
+  if (scrollValueY >= homeHeight) {
+    scrollValueY = homeHeight;
+    homeOpacity = 0;
+  }
+  else {
+    homeOpacity = 1 - (scrollValueY / homeHeight);
+  }
+  
+  console.log(homeOpacity);
+  home.style.opacity = homeOpacity;
+});
+
+
 function scrollIntoViews(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: 'smooth'});
