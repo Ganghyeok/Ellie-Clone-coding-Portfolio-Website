@@ -294,6 +294,11 @@ p {
 }
 
 /* Work */
+.work__section__container {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .work__categories {
   margin: 40px;
 }
